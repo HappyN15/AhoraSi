@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/estilo.css">
+    <title>Tablero de Caza</title>
+</head>
+
+<header>
+  <section class="menu">
+    <nav>
+      <ul class="ul">
+        <li><a href="https://www.dndbeyond.com">Dnd Beyond</a></li>
+        <li><a href="https://roll20.net">Roll 20</a></li>
+        <li><a href="https://www.dandwiki.com/wiki/">Dnd wiki</a></li>
+      </ul>
+    </nav>
+</section>
+</header>
+<body>
+  <h1>Tablero de Cacerias</h1>
+  <p>Con este tablero aventureros novatos pueden acceder a una base de datos conteniendo los datos de la criatura más inofensiva al monstruo más peligrosos. Contendrá: Una base de datos conteniendo los datos reales de DnD, un boton para aceptar o denegar la caza. </p>
+
+<script src="./json/Database.js"></script>
+  <video width="320" height="240" controls>
+    <source src="HOW TO PLAY DUNGEONS & DRAGONS - A beginners guide to D&D.mp4" type="video/mp4">
+  </video>
+<form id="miForm">
+  <h1>Tus Estados:</h1>
+  <h2>Clase:</h2>
+  <input type="text" id="name" name="name" required
+    minlength="4" maxlength="28" size="20" class="Class" id="classes">
+    <h2>Nivel de Personaje</h2>
+ <input type="text" id="name" name="name" required
+    minlength="4" maxlength="18" size="20" class="Level" id="Level">
+ 
+<br>
+<br>
+    <button class="submit" type="submit">Ingresar</button>
+  </form>
+    <br>
+    <br>
+    <table>
+        <tr>
+          <th>Monstruos</th>
+          <th>Imagen</th>
+          <th>Precio</th>
+          <th>Dificultad (0-30)</th>
+        </tr>
+        <tr>
+          <td>Mini Limo</td>
+          <th><img src="./Imagenes/Slime.jpg" alt="" height="200px" width="200px"></th>
+          <td>$30</td>
+          <th>1/4</th>
+          <th><a href="https://www.dandwiki.com/wiki/Baby_Slime_(5e_Creature)">
+            <button class="button">Cazar</button>
+          </a> </tr>
+        
+        <tr>
+          <td>Hombre Rata</td>
+          <td><img src="./Imagenes/Wererat.png" alt="" height="200px" width="200px"></td>
+          <td>$150</td>
+          <th>2</th>
+          <th><a href="https://roll20.net/compendium/dnd5e/Wererat#content">
+            <button class="button">Cazar</button>
+          </a></tr>
+        
+
+        <tr>
+          <td>Naga</td>
+          <th><img src="./Imagenes/Naga.jpeg" alt="" height="200px" width="200px"></th>
+          <td>$920</td>
+          <th>8</th>
+          <th><a href="https://roll20.net/compendium/dnd5e/Monsters:Spirit%20Naga/#h-Spirit%20Naga">
+            <button class="button">Cazar</button>
+          </a></tr>
+        
+
+        <tr>
+          <td>Marystain: La Bruja Sanguinaria</td>
+          <th><img src="./Imagenes/MaryLou.png" alt="" height="200px" width="200px"></th>
+          <td>$1210</td>
+          <th>7</th>
+          <th><a href="https://www.dndwiki.io/monsters/blood-witch">
+            <button class="button">Cazar</button>
+          </a></tr>
+        
+
+        <tr>
+          <td>Orcus: Lider Orco</td>
+          <th><img src="./Imagenes/Orco.png" alt="" height="200px" width="200px"></th>
+          <td>$530</td>
+          <th>4</th>
+          <th><a href="https://www.dndwiki.io/monsters/orc-war-chief">
+            <button class="button">Cazar</button>
+          </a></tr>
+        
+
+        <tr>
+          <td>B1G B0Y</td>
+          <th><img src="./Imagenes/B1GB0Y.jpg" alt="" height="200px" width="200px"></th>
+          <td>$1810</td>
+          <th>16</th>
+          <th><a href="https://www.dndbeyond.com/monsters/2153143-big-boy-robot">
+            <button class="button">Cazar</button>
+          </a></tr>
+        
+
+        <tr>
+          <td>Frysizz: Elemental de Fuego</td>
+          <th><img src="./Imagenes/Frie.png" alt="" height="200px" width="200px"></th>
+          <td>$800</td>
+          <th>6</th>
+          <th><a href="https://roll20.net/compendium/dnd5e/Fire%20Elemental#content">
+            <button class="button">Cazar</button>
+          </a></tr>
+        
+
+        <tr>
+          <td>Shrugd El Demonio Observador</td>
+          <th><img src="./Imagenes/Shrugd.png" alt="" height="200px" width="200px"></th>
+          <td>$1200</td>
+          <th>13</th>
+          <th><a href="https://www.skullsplitterdice.com/blogs/dnd/beholders-5e#:~:text=Beholders%20are%20incredibly%20intelligent%20and,or%20at%20worse%20as%20food.">
+            <button class="button">Cazar</button>
+          </a></tr>
+        
+      </table>
+
+      <div id="container">
+        <h2>Tus Clases</h2>
+        <ul class="slider">
+            <li><img height="375" width="562" src="Imagenes/Dice.png"></li>
+            <li><img height="375" width="562" src="Imagenes/Class.jpg"></li>
+            <li><img height="375" width="562" src="Imagenes/cff.jpg"></li>
+        </ul>
+    </div>
+</body>
+
+<footer>
+  <a href="https://www.facebook.com/dungeonsanddragonses/?brand_redir=73340321070">
+    <img width="50px" height="50px" src="Imagenes/Facebook_f_logo__2019_.svg.png">
+  </a>
+
+  <a href="https://www.instagram.com/dndwizards/">
+    <img width="50px" height="50px" src="Imagenes/Instagram_logo_2022.svg.png">
+  </a>
+
+  <a href="https://twitter.com/Wizards_DnD">
+    <img width="50px" height="50px" src="Imagenes/Twitter-logo.svg.png">
+  </a>
+</footer>
+</html>
